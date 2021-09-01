@@ -13,6 +13,13 @@
 		<h3>Facelets e Backing Beans</h3>
 		
 		<h:form>
+			<h:inputText value="#{indexView.mensagem}" />
+			<br/><br/>
+			
+			<h:commandButton value="Enviar" 
+				action="#{indexView.atualizaMensagem}" />
+			<br/><br/>
+			
 			<h:outputText id="saida" 
 				value="#{indexView.texto}" />
 		</h:form>
