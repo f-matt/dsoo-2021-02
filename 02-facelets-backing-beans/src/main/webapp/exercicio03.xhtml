@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt_BR" 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+	<h:head>
+		<meta charset="utf-8" />
+		<title>Exercício 03</title>
+	</h:head>
+
+	<h:body>
+		<h3>Exercício 03</h3>
+		
+		<h:form>
+			Informe uma string: <h:inputText value="#{ex03.entrada}" />
+			<br/><br/>
+			
+			<h:commandButton value="Contar" 
+				action="#{ex03.contaCaracteres}">
+				
+				<f:ajax execute="@form"
+					render="saida" />
+			</h:commandButton>
+			<br/><br/>
+			
+			<h:outputText id="saida" 
+				value="#{ex03.saida}" />
+			<hr />
+			
+			<ul>
+				<li><h:link value="Voltar" outcome="index" /></li>
+			</ul>
+		</h:form>
+	</h:body>
+</html>
