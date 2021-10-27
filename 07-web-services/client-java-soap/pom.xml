@@ -60,7 +60,7 @@
 				<version>2.6</version>
 				<executions>
 					<execution>
-						<id>wsimport-from-jdk</id>
+						<id>wsimport-from-jdk:generate-sources</id>
 						<goals>
 							<goal>wsimport</goal>
 						</goals>
